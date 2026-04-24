@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+        body {
+            display:flex;
+            
+            margin: 0px;
+            padding: 0px;
+            justify-content: center;
+            align-items: center; 
+        }
+
+        .form {
+            margin: 10px;
+            width: 500px;
+
+        }
+
+        .details {
+            margin: 20px 20px;
+        }
+
+        input,
+        textarea {
+            padding: 6px;
+            margin: 5px 0;
+        }
+
+        .r-form {
+            text-align: left;
+        }
+
+        .form:hover {
+            background-color: lightblue;
+        }
+
+        button {
+            background-color: #185FA5;
+            color: white;
+            padding: 5px;
+            width: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form>
+        <div class="r-form">
+            <h1><u>Registration Form :</u></h1>
+        </div>
+
+        <div class="form">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <div class="details">
+
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" id="fname"><br><br>
+
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="lname"><br><br>
+
+                    <label for="f-name">Father Name:</label>
+                    <input type="text" name="f-name" id="f-name"><br><br>
+
+                    <label for="m-name">Mother Name:</label>
+                    <input type="text" name="m-name" id="m-name"><br><br>
+
+
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email"><br><br>
+
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" name="mobile" id="mobile"><br><br>
+
+                    <label>Qualification:</label>
+                    <select>
+                        <option>--SELECT ONE--</option>
+                        <option>BTECH</option>
+                        <option>DEGREE</option>
+                        <option>MTECH</option>
+                    </select><br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" name="dob" id="dob"><br><br>
+
+                    <label for="address">Address:</label><br>
+                    <textarea rows="4" cols="30" id="address"></textarea><br><br>
+
+                    <label>Gender:</label><br>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female<br><br>
+
+                    <button type="submit" onclick="alert('Form Submitted')">
+                        Submit
+                    </button>
+
+                </div>
+
+            </fieldset>
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
