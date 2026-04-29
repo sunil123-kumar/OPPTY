@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horizon University</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 255, 0.8);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.image {
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.text h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.text button {
+    padding: 12px 25px;
+    background: gold;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.text button:hover {
+    background: orange;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.stats div h2 {
+    color: #003366;
+}
+
+.departments {
+    padding: 50px 20px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.departments h2 {
+    margin-bottom: 30px;
+    color: #003366;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-top {
+    height: 120px;
+}
+
+.red {
+    background: linear-gradient(to right, #ff6a6a, #ff8c5a);
+}
+
+.blue {
+    background: linear-gradient(to right, #4a6cf7, #6cc1ff);
+}
+
+.green {
+    background: linear-gradient(to right, #1fa2ff, #12d8fa, #00ff87);
+}
+
+.card-body {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-body h3 {
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+.footer {
+    background: #222;
+    color: #ccc;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-col h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-col p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-col a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-col a:hover {
+    color: white;
+}
+
+.footer hr {
+    margin: 30px 0;
+    border: 0.5px solid #555;
+}
+
+.copy {
+    text-align: center;
+    font-size: 13px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <h2>Horizon University</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Academics</a>
+        <a href="#">Admissions</a>
+        <a href="#">Campus Life</a>
+    </nav>
+</header>
+
+<section class="image">
+    <img src="https://jenroland.com/wp-content/uploads/2019/05/Dear-Mama-On-Your-Childs-Graduation-Day.jpg">
+    <div class="text">
+        <h1>Empowering Your Future</h1>
+        <p>Discover a world-class education designed to innovate and inspire.</p>
+        <button>Apply Now</button>
+    </div>
+</section>
+
+<section class="stats">
+    <div>
+        <h2>50+</h2>
+        <p>Undergraduate Programs</p>
+    </div>
+    <div>
+        <h2>15:1</h2>
+        <p>Student-Faculty Ratio</p>
+    </div>
+    <div>
+        <h2>95%</h2>
+        <p>Graduate Employment</p>
+    </div>
+    <div>
+        <h2>120+</h2>
+        <p>Student Clubs & Organizations</p>
+    </div>
+</section>
+
+<section class="departments">
+    <h2>Featured Departments</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="card-top red"></div>
+            <div class="card-body">
+                <h3>College of Engineering</h3>
+                <p>Build the future with cutting-edge labs and expert faculty.</p>
+                <a href="#">Learn More →</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-top blue"></div>
+            <div class="card-body">
+                <h3>School of Business</h3>
+                <p>Develop leadership and entrepreneurial skills.</p>
+                <a href="#">Learn More →</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-top green"></div>
+            <div class="card-body">
+                <h3>Arts & Sciences</h3>
+                <p>Explore diverse programs in humanities and sciences.</p>
+                <a href="#">Learn More →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>Horizon University</h3>
+            <p>123 University Blvd.</p>
+            <p>Innovation City, ST 12345</p>
+            <p>Phone: (555) 123-4567</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <p><a href="#">About Us</a></p>
+            <p><a href="#">Financial Aid</a></p>
+            <p><a href="#">Student Portal</a></p>
+            <p><a href="#">Alumni</a></p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <p><a href="#">Library</a></p>
+            <p><a href="#">Campus Map</a></p>
+            <p><a href="#">Career Center</a></p>
+            <p><a href="#">Athletics</a></p>
+        </div>
+    </div>
+
+    <hr>
+
+    
+</footer>
+
+</body>
+</html>
