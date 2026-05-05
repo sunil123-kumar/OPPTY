@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridge Layout</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* HERO SECTION */
+        .card-1 {
+            height: 100vh;
+            position: relative;
+        }
+
+        /* HERO IMAGE */
+        .hero-text {
+            position: absolute;
+            inset: 0;
+        }
+
+        .hero-text img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* DARK OVERLAY */
+        .card-1::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        /* NAVBAR */
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            box-sizing: border-box;
+            z-index: 2;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 30px;
+        }
+
+        .buttons a {
+            color: white;
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        /* SOCIAL ICONS */
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: #f5c6cb;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+
+        /* SECTION 2 */
+        .card-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            gap: 40px;
+        }
+
+        .card-2 img {
+            width: 400px;
+        }
+
+        .content {
+            text-align: center;
+            max-width: 400px;
+        }
+
+        .button {
+            padding: 10px 30px;
+            background: aliceblue;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background: black;
+            color: aqua;
+        }
+
+        /* CARD 3 */
+        .card-3 {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .chocolate-cards {
+            position: relative;
+        }
+
+        .chocolate-cards img {
+            width: 350px;
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: black;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            transition: 0.5s;
+        }
+
+        .chocolate-cards:hover .overlay {
+            opacity: 0.6;
+        }
+
+        /* REVIEWS */
+        .reviews {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .reviews h2 {
+            font-size: 40px;
+        }
+
+        .reviews span {
+            font-style: italic;
+        }
+
+        .reviews p {
+            max-width: 600px;
+            margin: auto;
+            color: #777;
+        }
+
+        .review-nav span {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .review-nav span:hover {
+            background: #333;
+            color: white;
+        }
+
+        .about {
+            top: 50%;
+            left: 45%;
+            color: white;
+            font-size:xx-large;
+            font-style: normal;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+        
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <section class="card-1" id="home">
+
+        <div class="hero-text">
+            <img src="https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/slider-background.jpg">
+             <div class="about">ABOUT US</div>
+        </div>
+
+        <div class="header">
+            <h2 style="color:white;">bridge</h2>
+
+            <div class="buttons">
+                <a href="#home">HOME</a>
+                <a href="day9-team.html">TEAM</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+           
+        </div>
+
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="card-2">
+        <img src="https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/h1-img-1.jpg">
+
+        <div class="content">
+            <h1><i>Artisan chocolatier</i></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <button class="button">READ ALL</button>
+        </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="card-3">
+
+        <div class="chocolate-cards">
+            <img src="https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/banner-1.jpg">
+            <div class="overlay">LOVE CHOCOLATE</div>
+        </div>
+
+        <div class="chocolate-cards">
+            <img src="https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/banner-2.jpg">
+            <div class="overlay">WORKSHOP</div>
+        </div>
+
+        <div class="chocolate-cards">
+            <img src="https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/banner-3.jpg">
+            <div class="overlay">THINK CHOCOLATE</div>
+        </div>
+
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews">
+        <h2>Chocolate <span>reviews</span></h2>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+
+        <h4>Norah Johnson</h4>
+
+        <div class="review-nav">
+            <span>&lt;</span>
+            <span>&gt;</span>
+        </div>
+    </section>
+
+</body>
+
+</html>
