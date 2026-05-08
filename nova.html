@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #30174a;
+
+        }
+
+        .head {
+            padding: 30px 15px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid gray;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: white;
+            box-shadow: 0px 2px 2px rgb(219, 212, 212);
+            cursor: pointer;
+            background: linear-gradient(90deg, #7f00ff, #00c6ff);
+
+        }
+
+        .explore {
+            padding: 20px 50px;
+            border-radius: 25px;
+            color: white;
+            box-shadow: 0px 5px 5px rgb(219, 212, 212);
+            background-color: #7a43e5;
+
+        }
+
+        .card {
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content h1 {
+            font-size: 50px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 30px;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            padding: 50px;
+            justify-content: center;
+        }
+
+
+        .cards {
+            width: 300px;
+            padding: 30px;
+            border-radius: 20px;
+
+
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            
+
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .cards:hover {
+            transform: translateY(-10px);
+        }
+
+
+        .cards h2 {
+            margin-bottom: 10px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .cards p {
+            color: #a0aec0;
+        }
+
+        .footer {
+            border-top: 1px solid gray;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 60px;
+        }
+
+
+        .footer-left {
+            font-size: 14px;
+        }
+
+
+        .footer-right a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #ddd;
+            transition: 0.3s;
+        }
+
+        .footer-right a:hover {
+            color: white;
+        }
+
+        .content {
+            text-align: center;
+        }
+        .small-card
+        {
+            width: 40px;
+            border-radius:20px;
+            background-color: #00c6ff;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <div class="logo">
+            NOVA
+        </div>
+        <div>
+            <button class="button">get started</button>
+        </div>
+
+    </header>
+    <div class="card">
+        <div class="content">
+            <h1>Connect in the</h1>
+            <h1>Speed of Light</h1>
+            <p>A completely revolutionized team messaging platform.</p>
+            <p>Secure, instantaneous, and designed to look as good as it</p>
+            <p>performs.</p>
+
+            <button class="explore">Explore Nova</button>
+        </div>
+
+
+    </div>
+    <div class="container">
+
+        <div class="cards">
+
+            <div class="small-card">⚡</div>
+            <h2>Real-time Sync</h2>
+            <p>Collaborate with your team instantly across the globe. Our distributed network ensures messages arrive
+                before you blink.</p>
+        </div>
+
+        <div class="cards">
+            <div class="small-card"> 🔒</div>
+            <h2>Encrypted</h2>
+            <p>Your data belongs to you. Military-grade encryption protects your conversations from prying eyes at every
+                step.</p>
+        </div>
+
+        <div class="cards">
+            <div class="small-card"> ⚙</div>
+            <h2>Workflows</h2>
+            <p>Tailor the platform to your needs. Create automated bots, integrate tools, and streamline your daily
+                operations seamlessly.</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-left">
+            © 2026 Nova Communications. All rights reserved.
+        </div>
+
+        <div class="footer-right">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
